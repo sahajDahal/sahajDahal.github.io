@@ -17,7 +17,7 @@
   --transition: 0.3s;
 }
 /* Variables end */
-
+// cmt
 html {
   scroll-behavior: smooth;
 }
@@ -33,59 +33,60 @@ ul {
   list-style-type: none;
 }
 
+// all links
 a {
-  text-decoration: none;
-  color: var(--primary-color);
+  text-decoration: none; // set text decorations for all links
+  color: var(--primary-color); //set color for all links
 }
-
+//all links that hover
 a:hover {
-  color: var(--secondary-color);
+  color: var(--secondary-color);//set hover color for all links
 }
-
+// body element for basic structure of a document
 body {
-  font-family: var(--font-family);
+  font-family: var(--font-family); // set font family for the body
 }
-
+// all navigation links
 nav {
-  position: sticky;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1.5rem 3.5rem;
-  background-color: var(--bg-color);
-  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  position: sticky; // set position for navigation links
+  top: 0; // setting top position for navigation links
+  left: 0;// adjusting position to the left for navigation links
+  z-index: 1;// sets the z-order positioning for navigation links
+  display: flex;// sets display of navigation links
+  align-items: center;// aligns items for navigation links
+  justify-content: space-between;// adjusting alignments between grid containers for navigation links
+  padding: 1.5rem 3.5rem;// sets padding for navigation links
+  background-color: var(--bg-color);// sets background color for navigation links
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);// setting box shadow for navigation links
 }
-
+// navigation links for header 1
 nav h1 {
-  color: var(--primary-color);
+  color: var(--primary-color);// setting color for nav h1
 }
-
+// navigation element??
 nav a {
-  color: var(--primary-color);
-  transition: var(--transition);
+  color: var(--primary-color);// sets color for navigation links
+  transition: var(--transition);// sets transition for navigation links
 }
-nav a:hover {
-  color: var(--secondary-color);
-  border-bottom: 2px solid var(--secondary-color);
+nav a:hover {// all navigation links that hover
+  color: var(--secondary-color);// sets hover color of text
+  border-bottom: 2px solid var(--secondary-color);//sets bottom border color of hover
 }
-
+// unordered list of navigation element??
 nav ul {
-  display: flex;
-  gap: 1.9rem;
+  display: flex;// sets display
+  gap: 1.9rem;//sets gap size
 }
-
+// nav unordered and listed items??
 nav ul li {
-  font-weight: var(--bold-font);
+  font-weight: var(--bold-font);//sets boldness of text
 }
-
+// hamburger menu element
 .burger-menu {
-  color: var(--primary-color);
-  font-size: 2rem;
-  border: 0;
-  background-color: transparent;
-  cursor: pointer;
-  display: none;
+  color: var(--primary-color);// sets color of burger menu
+  font-size: 2rem;//sets font size of burger menu
+  border: 0;// sets border size of burger menu
+  background-color: transparent;// sets transparent background for burger menu
+  cursor: pointer;// sets pointer cursor for burger menu
+  display: none;// sets display for burger menu
 }
