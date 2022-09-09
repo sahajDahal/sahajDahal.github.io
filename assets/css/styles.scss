@@ -2,6 +2,12 @@
 
 /* Variables */
 :root {
+  --variable-name: value;
+}
+selector {
+  property: var(--variable-name);
+}
+:root {
   --font-family: "Roboto", sans-serf;
   --normal-font: 400;
   --bold-font: 700;
@@ -48,18 +54,18 @@ body {
 }
 // all navigation links
 nav {
-  position: sticky; // set position for navigation links
-  top: 0; // setting top position for navigation links
-  left: 0;// adjusting position to the left for navigation links
-  z-index: 1;// sets the z-order positioning for navigation links
-  display: flex;// sets display of navigation links
-  align-items: center;// aligns items for navigation links
+  position: sticky; // defining sticky position for navigation links
+  top: 0; // setting top position for navigation section
+  left: 0;// adjusting position to the left for navigation section
+  z-index: 1;// sets the z-order positioning for navigation section
+  display: flex;// definesthe way it displays navigation section
+  align-items: center;// aligns items for navigation section
   justify-content: space-between;// adjusting alignments between grid containers for navigation links
   padding: 1.5rem 3.5rem;// sets padding for navigation links
   background-color: var(--bg-color);// sets background color for navigation links
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);// setting box shadow for navigation links
 }
-// navigation links for header 1
+// navigation section for header 1
 nav h1 {
   color: var(--primary-color);// setting color for nav h1
 }
@@ -260,6 +266,17 @@ nav ul li {
   border: 2px solid var(--primary-color);
   cursor: pointer;
 }
+.scroll-up {
+  position: fixed;
+  right: 0.5%;
+  bottom: 3%;
+  cursor: pointer;
+}
+
+.up-arrow {
+  width: 3rem;
+  height: 3rem;
+}
 .socials {
   display: flex;
   flex-direction: column;
@@ -277,15 +294,4 @@ footer {
   padding: 1.25rem;
   text-align: center;
   margin: 2rem 0 0;
-}
-.scroll-up {
-  position: fixed;
-  right: 0.5%;
-  bottom: 3%;
-  cursor: pointer;
-}
-
-.up-arrow {
-  width: 3rem;
-  height: 3rem;
 }
