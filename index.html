@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Sahaj</title>
+</head>
+
+<body>
+
+  <nav role='navigation'>
+
+    <h1 class="nav-head"> Sahaj Dahal </h1>
+    <div id="menuToggle">
+        
+
+      <input type="checkbox" />
+
+      <span></span>
+      <span></span>
+      <span></span>
+
+
+      <ul id="menu">
+        <a href="#main">
+          <li>Home</li>
+        </a>
+        <!-- <a href="#about">
+          <li>About</li>
+        </a> -->
+        <a href="#projects">
+          <li>Projects</li>
+        </a>
+        <a href="#contact">
+          <li>Contact</li>
+        </a>
+      </ul>
+    </div>
+  </nav>
+
+  <main id="main">
+        <section class="main-section">
+            <div class="container">
+                <div class="column">
+                    <img src="coloradoview.png" alt="image" class="profile-image">
+                </div>
+                <div class="column">
+                    <h2>Hi I'm Sahaj! </h2>
+                    <p>Thanks for visiting my portfolio! I have a passion for data analytics and data science, where I thrive on extracting valuable 
+                      insights and making informed decisions through data. Exploring patterns, constructing models, and 
+                      leveraging data-driven solutions fuel my enthusiasm in this field.</p>
+                    <a href="#projects" class="projects-button">My Projects</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+   <section id="projects" class="projects-section">
+        <h2>My Projects</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <img src="fbref.png" alt="Project 1" class="project-image">
+                <h3 class="project-title">Web Scraper</h3>
+                <p class="project-description">Webscraping soccer data from fbref.com</p>
+                <a href="https://github.com/sahajDahal/fbref_web_scraper" class="project-link" target = "_blank">GitHub</a>
+            </div>
+            <div class="project-card">
+              <img src="diwali.png" alt="Exploratory Data Analysis" class="project-image">
+              <h3 class="project-title">Exploratory Data Analysis</h3>
+              <p class="project-description">Exploratory data analysis of sales data using matplotlib and seaborn</p>
+              <a href="https://github.com/sahajDahal/Diwali_Sales_Analysis" class="project-link" target = "_blank">GitHub</a>
+          </div>
+            <div class="project-card">
+                <img src="nvidia.png" alt="Project 2" class="project-image">
+                <h3 class="project-title">Machine Learning (time series data)</h3>
+                <p class="project-description">Predicting NVDA stock price using random forest classifier</p>
+                <a href="https://github.com/sahajDahal/NVIDIA_Stock_Predictor" class="project-link" target = "_blank">GitHub</a>
+            </div>
+            
+            <!-- Add more project cards as needed -->
+            <div class="project-card">
+              <img src="wine.png" alt="Project 1" class="project-image">
+              <h3 class="project-title">Machine Learning (k-means clustering)</h3>
+              <p class="project-description">Clustering red wine using k-means</p>
+              <a href="https://github.com/sahajDahal/KMeans_Wine_Clustering" class="project-link" target = "_blank">GitHub</a>
+          </div>
+          <div class="project-card">
+              <img src="datacleaning.png" alt="Project 3" class="project-image">
+              <h3 class="project-title">Data Cleaning</h3>
+              <p class="project-description">Cleaning and preparing Brazilian clothing E-commerce dataset for further analysis</p>
+              <a href="https://github.com/sahajDahal/Ecommerce_Data_Cleaning" class="project-link" target = "_blank">GitHub</a>
+          </div>
+        </div>
+    </section>
+
+        <section id="contact" class="contact-section">
+        <h2>Contact Me</h2>
+        <!-- <form class="contact-form" action="mailto:dahalsahaj15@gmail.com" method="post" enctype="text/plain">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="send-button">Send</button>
+            </div>
+        </form> -->
+
+      <style>
+        /* Add space between logos */
+        .logo {
+            margin-right: 20px; /* Adjust the margin as needed */
+        }
+    </style>
+
+      <a href="https://www.linkedin.com/in/sahaj-dahal-239433240/" target="_blank" class="logo">
+          <img src="linkedin-logo.png" alt="LinkedIn" style="width: 30px; height: 30px;">
+      </a>
+  
+      <!-- Gmail Icon with Link -->
+      <a href="mailto:dahalsahaj15@gmail.com" >
+          <img src="gmail-logo.png" alt="Gmail" style="width: 30px; height: 30px;">
+      </a>
+
+    </section>
+
+    <footer class="footer">
+    <p class="footer-text">Sahaj Dahal &copy; <span id="current-year"></span></p>
+</footer>
+
+
+
+
+
+
+
+</body>
+
+<script>
+    // Get the current year
+    const currentYear = new Date().getFullYear();
+
+    // Display the current year in the footer
+    document.getElementById("current-year").textContent = currentYear;
+</script>
+
+</html>
